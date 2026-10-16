@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anrudh Search</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: white;
+      color: #202124;
+    }
+
+    header {
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    .main {
+      text-align: center;
+      margin: 100px auto 0;
+      padding: 20px;
+    }
+
+    .logo {
+      font-size: 55px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .blue { color: #4285F4; }
+    .red { color: #EA4335; }
+    .yellow { color: #FBBC05; }
+    .green { color: #34A853; }
+
+    .search-box {
+      max-width: 560px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      border: 1px solid #dfe1e5;
+      border-radius: 30px;
+      padding: 12px 18px;
+    }
+
+    .search-box:hover {
+      box-shadow: 0 1px 6px #ccc;
+    }
+
+    input {
+      flex: 1;
+      border: none;
+      outline: none;
+      font-size: 16px;
+      padding: 4px 10px;
+      min-width: 0;
+    }
+
+    button {
+      margin: 25px 5px;
+      padding: 11px 18px;
+      border: 1px solid #f8f9fa;
+      border-radius: 5px;
+      background: #f8f9fa;
+      cursor: pointer;
+    }
+
+    button:hover {
+      border-color: #dadce0;
+    }
+
+    footer {
+      margin-top: 100px;
+      padding: 20px;
+      text-align: center;
+      background: #f2f2f2;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <span>Gmail</span>
+    <span>Images</span>
+  </header>
+
+  <main class="main">
+    <div class="logo">
+      <span class="blue">A</span><span class="red">n</span><span class="yellow">r</span><span class="blue">u</span><span class="green">d</span><span class="red">h</span>
+    </div>
+
+    <form action="https://www.google.com/search" method="GET">
+      <div class="search-box">
+        <span>🔍</span>
+        <input
+          type="text"
+          name="q"
+          placeholder="Search anything..."
+          aria-label="Search the web"
+          required
+        >
+        <span>🎙️</span>
+      </div>
+
+      <button type="submit">Anrudh Search</button>
+      <button type="button"
+        onclick="window.location.href='https://www.google.com/doodles'">
+        I'm Feeling Lucky
+      </button>
+    </form>
+
+    <p>Created with ❤️ by Anrudh Singh</p>
+  </main>
+
+  <footer>
+    India | Anrudh Search
+  </footer>
+</body>
+</html>
